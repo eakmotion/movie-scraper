@@ -38,6 +38,7 @@ gem 'devise'
 gem 'haml', '~> 4.0.5'
 gem 'validate_url'
 gem 'nokogiri'
+gem 'utf8_utils'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

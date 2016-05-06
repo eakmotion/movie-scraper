@@ -1,3 +1,5 @@
 %h1 New Movie
+- if @failure
+  %h3= @failure
 = render 'form'
 = link_to 'Back', movies_path

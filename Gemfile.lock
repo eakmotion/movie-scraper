@@ -167,6 +167,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    utf8_utils (2.0.1)
     validate_url (1.0.2)
       activemodel (>= 3.0.0)
       addressable
@@ -198,5 +199,6 @@ DEPENDENCIES
   turbolinks
   twitter-bootstrap-rails!
   uglifier (>= 1.3.0)
+  utf8_utils
   validate_url
   web-console (~> 2.0)

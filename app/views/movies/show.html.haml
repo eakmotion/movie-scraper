@@ -7,7 +7,7 @@
   = @movie.hotness
 %p
   %strong Image url:
-  = @movie.image_url
+  = image_tag @movie.image_url, class: 'thumbnail'
 %p
   %strong Synopsis:
   = @movie.synopsis

@@ -18,7 +18,7 @@
       %tr
         %td= movie.title
         %td= movie.hotness
-        %td= movie.image_url
+        %td= image_tag movie.image_url, class: 'thumbnail'
         %td= movie.synopsis
         %td= movie.rating
         %td= movie.genre
