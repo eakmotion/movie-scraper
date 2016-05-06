@@ -23,9 +23,6 @@
 %p
   %strong Runtime:
   = @movie.runtime
-%p
-  %strong User:
-  = @movie.user_id
 = link_to 'Edit', edit_movie_path(@movie)
 |
 \#{link_to 'Back', movies_path}
