@@ -1,0 +1,22 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Movie Scraper', root_path, class: 'navbar-brand'
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        - if current_user
+          %li
+            = link_to 'Setting', edit_user_registration_path
+          %li
+            = link_to 'Logout', destroy_user_session_path, method: :delete
+        - else
+          %li
+            = link_to 'Sign In', new_user_session_path 
+
+          
