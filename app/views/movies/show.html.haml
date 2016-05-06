@@ -1,0 +1,31 @@
+%p#notice= notice
+%p
+  %strong Title:
+  = @movie.title
+%p
+  %strong Hotness:
+  = @movie.hotness
+%p
+  %strong Image url:
+  = @movie.image_url
+%p
+  %strong Synopsis:
+  = @movie.synopsis
+%p
+  %strong Rating:
+  = @movie.rating
+%p
+  %strong Genre:
+  = @movie.genre
+%p
+  %strong Director:
+  = @movie.director
+%p
+  %strong Runtime:
+  = @movie.runtime
+%p
+  %strong User:
+  = @movie.user_id
+= link_to 'Edit', edit_movie_path(@movie)
+|
+\#{link_to 'Back', movies_path}
